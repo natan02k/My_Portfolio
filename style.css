@@ -1860,6 +1860,67 @@ section {
     51%, 100% { border-color: transparent; }
 }
 /* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet and large mobile landscape */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .timeline {
+    max-width: 700px;
+  }
+  
+  .timeline-content {
+    width: 42%;
+    padding: 1.5rem;
+  }
+  
+  .timeline-item {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Small tablet and large mobile */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .project-card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .timeline {
+    max-width: 500px;
+    padding-left: 20px;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .timeline-dot {
+    left: 20px;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet portrait */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -1917,23 +1978,7 @@ section {
 
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item {
-    flex-direction: column !important;
-    padding-left: 50px;
-  }
-
-  .timeline-dot {
-    left: 20px;
-  }
-
-  .timeline-content {
-    width: 100%;
+    gap: var(--spacing-md);
   }
 
   .contact-content {
