@@ -3,7 +3,7 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches: ['main']
-  # Erlaubt es dir, die Action auch manuell im Tab "Actions" zu starten
+  # Erlaubt es dir, die Action auch manuell im Tab "Actions" zu starten.
   workflow_dispatch: 
 
 permissions:
