@@ -12,7 +12,7 @@ function App() {
   return (
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}>
       <div className="relative min-h-screen w-full selection:bg-primary selection:text-black">
-        {/* Global SVG Noise Filter */}
+        {/* Global SVG Noise Filter. */}
         <div className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.03] mix-blend-difference">
           <svg className="h-full w-full">
             <filter id="noise">
