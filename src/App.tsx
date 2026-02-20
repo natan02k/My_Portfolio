@@ -35,7 +35,7 @@ function App() {
         </main>
 
         <footer className="w-full py-8 text-center text-sm text-foreground/50 border-t border-white/5">
-          <p>&copy; {new Date().getFullYear()} Natan Kondler. Alle Rechte vorbehalten.</p>
+          <p>&copy; {new Date().getFullYear()} Natan Kondler. All rights reserved.</p>
         </footer>
       </div>
     </ReactLenis>

@@ -14,40 +14,40 @@ interface Project {
 const projects: Project[] = [
     {
         title: "Infernum",
-        description: "Pixel Art Open World RPG Game entwickelt mit Godot Engine. Erkunde eine riesige Welt, kämpfe gegen Monster und löse Quests.",
+        description: "Pixel Art Open World RPG developed with Godot Engine. Explore a vast world, fight monsters, and solve quests.",
         image: "https://picsum.photos/seed/infernum/800/600.webp",
         tags: ["Godot", "GDScript", "Pixel Art"],
         link: "https://n02k.itch.io/infernum",
     },
     {
         title: "Escape Shadows",
-        description: "2D Pixel Art Dungeon Crawler mit Godot Engine. Stealth-Mechaniken, komplexe Puzzles und atmosphärische Grafik.",
+        description: "2D Pixel Art Dungeon Crawler built with Godot Engine. Features stealth mechanics, complex puzzles, and atmospheric graphics.",
         image: "https://picsum.photos/seed/escapeshadows/800/600.webp",
         tags: ["Godot", "GDScript", "Dungeon Crawler"],
     },
     {
-        title: "Atari Breakout KI",
-        description: "Data Science Projekt - KI-Agent lernt Atari Breakout mit Reinforcement Learning.",
+        title: "Atari Breakout AI",
+        description: "Data Science project showcasing an AI agent learning to play Atari Breakout using Reinforcement Learning.",
         image: "https://picsum.photos/seed/atari/800/600.webp",
         tags: ["Python", "Reinforcement Learning"],
     },
     {
-        title: "Rezept API",
-        description: "Full Stack Webanwendung für Rezeptverwaltung. REST API, Datenbankanbindung und moderne Frontend-UI.",
+        title: "Recipe API",
+        description: "Full-stack web application for recipe management. Uses a REST API, PostgreSQL database, and modern frontend UI.",
         image: "https://picsum.photos/seed/rezept/800/600.webp",
         tags: ["JavaScript", "PostgreSQL", "Vert.x", "Java"],
     },
     {
-        title: "Tetris Klon",
-        description: "Klassischer Tetris Klon mit modernen Features. Score-Tracking, Level-System und smooth Animationen.",
+        title: "Tetris Clone",
+        description: "Classic Tetris clone built from scratch with modern features, including score tracking, levels, and smooth animations.",
         image: "https://picsum.photos/seed/tetris/800/600.webp",
         tags: ["JavaScript", "HTML5 Canvas", "CSS3"],
     },
     {
-        title: "Mandelbrot",
-        description: "Interaktiver Fraktal-Viewer mit C. Unendliches Zoomen in das Mandelbrot Set.",
+        title: "Mandelbrot Server",
+        description: "Interactive fractal viewer written in C. Allows infinite zooming into the Mandelbrot Set.",
         image: "https://picsum.photos/seed/mandelbrot/800/600.webp",
-        tags: ["C", "Mathematik", "Fraktale"],
+        tags: ["C", "Mathematics", "Fractals"],
     },
 ];
 
@@ -146,7 +146,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                         )}
                         {!project.link && !project.github && (
                             <span className="flex items-center gap-2 text-sm font-bold text-muted-foreground uppercase tracking-wider relative z-20">
-                                <Code size={18} /> Intern / Privat
+                                <Code size={18} /> Internal / Private
                             </span>
                         )}
                     </div>
@@ -176,7 +176,7 @@ export const Projects = () => {
                         viewport={{ once: true }}
                         className="inline-block"
                     >
-                        <h2 className="text-5xl md:text-8xl font-black text-white/5 mix-blend-difference pointer-events-none leading-none">
+                        <h2 className="text-5xl md:text-8xl font-black text-outline pointer-events-none leading-none">
                             Featured<br />Projects
                         </h2>
                     </motion.div>

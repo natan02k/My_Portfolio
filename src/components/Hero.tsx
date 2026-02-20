@@ -117,7 +117,7 @@ export const Hero = () => {
                         variants={itemVariants}
                         className="text-base md:text-lg text-foreground/60 max-w-xl mx-auto mt-4 font-medium"
                     >
-                        Von Full-Stack-Webanwendungen und Game Development über systemnahe C-Programmierung bis hin zu Data Science und Reinforcement Learning-Modellen.
+                        From full-stack web applications and game development to system-level C programming, data science, and reinforcement learning models.
                     </motion.p>
 
                     <motion.div
@@ -130,7 +130,7 @@ export const Hero = () => {
                                 className="group relative px-8 py-4 bg-primary text-[#0f172a] rounded-full font-bold text-lg overflow-hidden flex items-center gap-3 transition-transform hover:scale-105"
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
-                                <span className="relative z-10">Projekte ansehen</span>
+                                <span className="relative z-10">View Projects</span>
                                 <ArrowRight className="relative z-10 group-hover:translate-x-1 transition-transform" />
                             </button>
                         </Magnetic>
@@ -141,7 +141,7 @@ export const Hero = () => {
                                 target="_blank"
                                 className="group px-8 py-4 glass rounded-full font-bold text-lg flex items-center gap-3 hover:bg-white/10 transition-colors border border-white/10"
                             >
-                                <span>Lebenslauf</span>
+                                <span>Resume</span>
                                 <Download size={20} className="group-hover:-translate-y-1 transition-transform" />
                             </a>
                         </Magnetic>

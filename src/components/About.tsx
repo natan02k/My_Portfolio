@@ -28,7 +28,7 @@ export const About = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     className="flex flex-col items-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Über mich</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full" />
                 </motion.div>
 
@@ -60,50 +60,50 @@ export const About = () => {
                         className="lg:col-span-7 space-y-8"
                     >
                         <motion.div variants={itemVariants} className="space-y-4">
-                            <h3 className="text-3xl font-semibold text-white">Natan Kondler</h3>
+                            <h3 className="text-3xl font-semibold text-foreground">Natan Kondler</h3>
                             <p className="text-lg text-foreground/80 leading-relaxed">
-                                Ein 24-jähriger Computer Science Student an der Technischen Hochschule Mittelhessen. Seit ich 2023 meine
-                                Leidenschaft für die Softwareentwicklung entdeckt habe, treibt mich die Faszination an, komplexe Probleme
-                                durch eleganten Code zu lösen.
+                                A 24-year-old Computer Science student at Technische Hochschule Mittelhessen. Since discovering my
+                                passion for software development in 2023, I have been driven by the fascination of solving complex problems
+                                through elegant code.
                             </p>
                         </motion.div>
 
                         <motion.div variants={itemVariants} className="space-y-4">
-                            <h3 className="text-2xl font-semibold text-white">Vielseitige Expertise</h3>
+                            <h3 className="text-2xl font-semibold text-foreground">Versatile Expertise</h3>
                             <p className="text-lg text-foreground/80 leading-relaxed">
-                                Statt mich vorzeitig auf eine Nische zu beschränken, verfolge ich einen interdisziplinären Ansatz. Meine
-                                Projekterfahrung erstreckt sich von Full-Stack-Webanwendungen und Game Development über systemnahe
-                                C-Programmierung bis hin zu Data Science und Reinforcement Learning-Modellen.
+                                Instead of restricting myself to a specific niche early on, I pursue an interdisciplinary approach. My
+                                project experience ranges from full-stack web applications and game development to system-level
+                                C programming, data science, and reinforcement learning models.
                             </p>
                         </motion.div>
 
                         <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5">
+                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-foreground/10">
                                 <MapPin className="text-primary w-6 h-6" />
                                 <div>
-                                    <p className="text-sm text-muted-foreground">Standort</p>
-                                    <p className="font-medium">Wetzlar, Deutschland</p>
+                                    <p className="text-sm text-muted-foreground">Location</p>
+                                    <p className="font-medium">Wetzlar, Germany</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5">
+                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-foreground/10">
                                 <GraduationCap className="text-primary w-6 h-6" />
                                 <div>
-                                    <p className="text-sm text-muted-foreground">Studium</p>
-                                    <p className="font-medium">5. Semester Informatik (B.Sc.)</p>
+                                    <p className="text-sm text-muted-foreground">Studies</p>
+                                    <p className="font-medium">5th Semester Computer Science (B.Sc.)</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5">
+                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-foreground/10">
                                 <Cake className="text-primary w-6 h-6" />
                                 <div>
-                                    <p className="text-sm text-muted-foreground">Alter</p>
-                                    <p className="font-medium">24 Jahre alt</p>
+                                    <p className="text-sm text-muted-foreground">Age</p>
+                                    <p className="font-medium">24 Years Old</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5">
+                            <div className="flex items-center gap-3 p-4 glass rounded-xl border border-foreground/10">
                                 <Calendar className="text-primary w-6 h-6" />
                                 <div>
-                                    <p className="text-sm text-muted-foreground">Studienbeginn</p>
-                                    <p className="font-medium">Seit WS 23/24</p>
+                                    <p className="text-sm text-muted-foreground">Started Studies</p>
+                                    <p className="font-medium">Since Winter Semester 23/24</p>
                                 </div>
                             </div>
                         </motion.div>

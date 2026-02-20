@@ -13,51 +13,51 @@ interface TimelineItem {
 
 const experiences: TimelineItem[] = [
     {
-        date: "10/2023 - Heute",
-        title: "Studium der Informatik",
+        date: "10/2023 - Present",
+        title: "Computer Science Studies",
         subtitle: "Technische Hochschule Mittelhessen",
-        description: "Bachelor of Science in Informatik mit Fokus auf Softwareentwicklung und Datenbanksysteme.",
+        description: "Bachelor of Science in Computer Science with a focus on software development and database systems.",
         bullets: [
-            "Vielseitige Projekte in Game Development, Data Science und Full Stack",
-            "Praktische Erfahrung mit modernen Entwicklungstools",
-            "Aktuell im 5. Semester mit voraussichtlichem Abschluss in 2 Semestern"
+            "Versatile projects in game development, data science, and full-stack web development",
+            "Practical experience with modern development tools",
+            "Currently in my 5th semester, expected to graduate in 2 semesters"
         ],
-        icon: <GraduationCap className="w-6 h-6 text-[#0f172a]" />
+        icon: <GraduationCap className="w-6 h-6 text-background" />
     },
     {
         date: "04/2023 - 10/2023",
-        title: "E-Commerce Mitarbeiter",
-        subtitle: "Familienbetrieb",
-        description: "Vertrieb von Waren über Online-Plattformen mit Fokus auf Digitalisierung.",
+        title: "E-Commerce Associate",
+        subtitle: "Family Business",
+        description: "Sales of goods via online platforms with a focus on digitalization.",
         bullets: [
-            "Bestellabwicklung und Versandmanagement",
-            "Optimierung von Produktanzeigen und Präsentationen",
-            "Kundenkommunikation und Support"
+            "Order processing and shipping management",
+            "Optimization of product listings and presentations",
+            "Customer communication and support"
         ],
-        icon: <Briefcase className="w-6 h-6 text-[#0f172a]" />
+        icon: <Briefcase className="w-6 h-6 text-background" />
     },
     {
         date: "2020 - 2023",
-        title: "Vielseitige praktische Erfahrungen",
-        subtitle: "Sozial & Ehrenamtlich",
-        description: "Engagement in verschiedenen Bereichen vor dem Studium.",
+        title: "Versatile Practical Experience",
+        subtitle: "Social & Volunteer Work",
+        description: "Engagement in various fields prior to university studies.",
         bullets: [
-            "Ausbildung zum Pflegefachmann (Uniklinikum Gießen/Marburg)",
-            "Ehrenamtliche Tätigkeit beim Malteser Hilfsdienst",
-            "Auslandsaufenthalt für Freiwilligenarbeit in Thailand"
+            "Nursing training (University Hospital Gießen/Marburg)",
+            "Volunteer work at Malteser Hilfsdienst",
+            "Stay abroad for volunteer work in Thailand"
         ],
-        icon: <HeartHandshake className="w-6 h-6 text-[#0f172a]" />
+        icon: <HeartHandshake className="w-6 h-6 text-background" />
     },
     {
         date: "08/2018 - 06/2020",
-        title: "Fachhochschulreife",
+        title: "Advanced Technical College Certificate",
         subtitle: "Theodor-Heuss-Schule Wetzlar",
-        description: "Erreichung der Fachhochschulreife mit Schwerpunkt Wirtschaft und Verwaltung.",
+        description: "Achieved the Advanced Technical College Certificate with a focus on business and administration.",
         bullets: [
-            "Grundlagen in Betriebswirtschaft und Verwaltung",
-            "Business-Englisch und kommunikative Kompetenzen"
+            "Foundations in business administration and management",
+            "Business English and communication skills"
         ],
-        icon: <GraduationCap className="w-6 h-6 text-[#0f172a]" />
+        icon: <GraduationCap className="w-6 h-6 text-background" />
     }
 ];
 
@@ -88,11 +88,11 @@ export const Experience = () => {
                             transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
                             className="text-5xl md:text-7xl font-black mb-4 tracking-tight"
                         >
-                            Werdegang
+                            Experience & Education
                         </motion.h2>
                     </div>
                     <p className="text-foreground/60 max-w-2xl text-lg font-medium mt-6">
-                        Mein Weg von ersten ehrenamtlichen Erfahrungen bis zum Informatikstudium.
+                        My journey from initial volunteer experiences to studying computer science.
                     </p>
                 </motion.div>
 
@@ -100,7 +100,7 @@ export const Experience = () => {
                     {/* Animated SVG Timeline drawn in center (desktop) / left (mobile) */}
                     <div className="absolute left-[24px] md:left-1/2 top-0 bottom-0 w-[4px] -translate-x-1/2 h-full z-0 pointer-events-none">
                         {/* Background Track */}
-                        <div className="absolute inset-0 bg-white/5 w-full h-full rounded-full" />
+                        <div className="absolute inset-0 bg-foreground/10 w-full h-full rounded-full" />
 
                         {/* Drawing Line */}
                         <motion.div

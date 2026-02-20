@@ -41,10 +41,16 @@ body {
 
 /* Base custom classes to replicate awwwards feel */
 .glass {
-  background: rgba(15, 23, 42, 0.4);
+  background: color-mix(in srgb, var(--color-foreground) 3%, color-mix(in srgb, var(--color-background) 40%, transparent));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid color-mix(in srgb, var(--color-foreground) 10%, transparent);
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px var(--color-foreground);
+  color: transparent;
+  opacity: 0.15;
 }
 
 .text-gradient {

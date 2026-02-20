@@ -22,22 +22,22 @@ export const Skills = () => {
     const skillCategories = [
         {
             icon: <Code2 className="w-8 h-8 text-primary" />,
-            title: "Programmiersprachen",
+            title: "Programming Languages",
             skills: ["Java", "Python", "C", "GDScript", "C#", "SQL"],
         },
         {
             icon: <Laptop className="w-8 h-8 text-primary" />,
-            title: "Web-Entwicklung",
+            title: "Web Development",
             skills: ["JavaScript", "TypeScript", "HTML/CSS", "Node.js", "Vert.x", "REST APIs"],
         },
         {
             icon: <Database className="w-8 h-8 text-primary" />,
-            title: "Datenbanken",
+            title: "Databases",
             skills: ["PostgreSQL", "MySQL", "MongoDB"],
         },
         {
             icon: <Wrench className="w-8 h-8 text-primary" />,
-            title: "Tools & Technologien",
+            title: "Tools & Technologies",
             skills: ["Git / GitLab", "Godot Engine", "Docker", "CI/CD Pipeline", "Game Dev", "iOS Shortcuts"],
         },
     ];
@@ -51,11 +51,10 @@ export const Skills = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     className="flex flex-col items-center mb-16 text-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Skills & Technologien</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Skills & Technologies</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full" />
                     <p className="mt-6 text-foreground/70 max-w-2xl text-lg">
-                        Ein fokussiertes Toolkit aus modernsten und bewährten Technologien, um robuste und skalierbare Lösungen zu
-                        bauen.
+                        A focused toolkit of modern and proven technologies to build robust and scalable solutions.
                     </p>
                 </motion.div>
 
@@ -70,19 +69,19 @@ export const Skills = () => {
                         <motion.div
                             key={idx}
                             variants={itemVariants}
-                            className="glass p-8 rounded-2xl border border-white/5 hover:border-primary/50 transition-colors duration-300 group"
+                            className="glass p-8 rounded-2xl border border-foreground/10 hover:border-primary/50 transition-colors duration-300 group"
                         >
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="p-3 bg-white/5 rounded-xl group-hover:bg-primary/10 transition-colors">
+                                <div className="p-3 bg-foreground/5 rounded-xl group-hover:bg-primary/10 transition-colors">
                                     {category.icon}
                                 </div>
-                                <h3 className="text-2xl font-semibold text-white">{category.title}</h3>
+                                <h3 className="text-2xl font-semibold text-foreground">{category.title}</h3>
                             </div>
                             <div className="flex flex-wrap gap-3">
                                 {category.skills.map((skill, sIdx) => (
                                     <span
                                         key={sIdx}
-                                        className="px-4 py-2 bg-white/5 text-foreground/90 rounded-full text-sm font-medium border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all cursor-default"
+                                        className="px-4 py-2 bg-foreground/5 text-foreground/90 rounded-full text-sm font-medium border border-foreground/10 hover:bg-foreground/10 hover:border-foreground/20 transition-all cursor-default"
                                     >
                                         {skill}
                                     </span>

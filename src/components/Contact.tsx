@@ -11,11 +11,11 @@ export const Contact = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     className="flex flex-col items-center mb-16 text-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Lass uns reden</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Talk</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full" />
                     <p className="mt-6 text-foreground/70 max-w-2xl text-lg">
-                        Interessiert an einer Zusammenarbeit oder hast du Fragen? Hier findest du alle
-                        Möglichkeiten, um mit mir in Kontakt zu treten.
+                        Interested in working together or have any questions? Here you can find all
+                        the ways to get in touch with me.
                     </p>
                 </motion.div>
 
@@ -28,40 +28,40 @@ export const Contact = () => {
                         transition={{ duration: 0.5 }}
                         className="space-y-8"
                     >
-                        <div className="flex items-start gap-6 p-6 glass rounded-2xl border border-white/5 group hover:border-primary/30 transition-colors">
-                            <div className="p-4 bg-white/5 rounded-xl text-primary group-hover:bg-primary/10 transition-colors">
+                        <div className="flex items-start gap-6 p-6 glass rounded-2xl border border-foreground/10 group hover:border-primary/30 transition-colors">
+                            <div className="p-4 bg-foreground/5 rounded-xl text-primary group-hover:bg-primary/10 transition-colors">
                                 <Mail size={28} />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-semibold mb-2 text-white">Email</h3>
-                                <p className="text-foreground/70 mb-2">Die beste Möglichkeit, mich zu erreichen.</p>
+                                <h3 className="text-2xl font-semibold mb-2 text-foreground">Email</h3>
+                                <p className="text-foreground/70 mb-2">The best way to reach me.</p>
                                 <a href="mailto:n.kondler@icloud.com" className="text-primary hover:underline text-lg font-medium">
                                     n.kondler@icloud.com
                                 </a>
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-6 p-6 glass rounded-2xl border border-white/5 group hover:border-primary/30 transition-colors">
-                            <div className="p-4 bg-white/5 rounded-xl text-primary group-hover:bg-primary/10 transition-colors">
+                        <div className="flex items-start gap-6 p-6 glass rounded-2xl border border-foreground/10 group hover:border-primary/30 transition-colors">
+                            <div className="p-4 bg-foreground/5 rounded-xl text-primary group-hover:bg-primary/10 transition-colors">
                                 <Phone size={28} />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-semibold mb-2 text-white">Telefon</h3>
-                                <p className="text-foreground/70 mb-2">Für dringende Anfragen.</p>
+                                <h3 className="text-2xl font-semibold mb-2 text-foreground">Phone</h3>
+                                <p className="text-foreground/70 mb-2">For urgent inquiries.</p>
                                 <a href="tel:+491639268268" className="text-primary hover:underline text-lg font-medium">
                                     +49 163 9268268
                                 </a>
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-6 p-6 glass rounded-2xl border border-white/5 group hover:border-primary/30 transition-colors">
-                            <div className="p-4 bg-white/5 rounded-xl text-primary group-hover:bg-primary/10 transition-colors">
+                        <div className="flex items-start gap-6 p-6 glass rounded-2xl border border-foreground/10 group hover:border-primary/30 transition-colors">
+                            <div className="p-4 bg-foreground/5 rounded-xl text-primary group-hover:bg-primary/10 transition-colors">
                                 <MapPin size={28} />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-semibold mb-2 text-white">Standort</h3>
-                                <p className="text-foreground/70 mb-2">Aktueller Wohnort und Studienort.</p>
-                                <span className="text-primary text-lg font-medium">Wetzlar, Deutschland</span>
+                                <h3 className="text-2xl font-semibold mb-2 text-foreground">Location</h3>
+                                <p className="text-foreground/70 mb-2">Current residence and place of study.</p>
+                                <span className="text-primary text-lg font-medium">Wetzlar, Germany</span>
                             </div>
                         </div>
 
@@ -93,38 +93,38 @@ export const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="glass p-8 rounded-3xl border border-white/10"
+                        className="glass p-8 rounded-3xl border border-foreground/10"
                     >
                         <form className="space-y-6 flex flex-col h-full" onSubmit={(e) => { e.preventDefault(); window.location.href = "mailto:n.kondler@icloud.com"; }}>
                             <div>
                                 <label className="text-sm font-medium text-foreground/80 mb-2 block">Name</label>
                                 <input
                                     type="text"
-                                    className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
-                                    placeholder="Dein Name"
+                                    className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
+                                    placeholder="Your Name"
                                 />
                             </div>
                             <div>
                                 <label className="text-sm font-medium text-foreground/80 mb-2 block">Email</label>
                                 <input
                                     type="email"
-                                    className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
-                                    placeholder="deine.email@beispiel.com"
+                                    className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
+                                    placeholder="your.email@example.com"
                                 />
                             </div>
                             <div className="flex-grow">
-                                <label className="text-sm font-medium text-foreground/80 mb-2 block">Nachricht</label>
+                                <label className="text-sm font-medium text-foreground/80 mb-2 block">Message</label>
                                 <textarea
                                     rows={5}
-                                    className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"
-                                    placeholder="Wie kann ich dir helfen?"
+                                    className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors resize-none"
+                                    placeholder="How can I help you?"
                                 />
                             </div>
                             <button
                                 type="submit"
                                 className="w-full py-4 bg-primary text-[#0f172a] font-bold rounded-xl hover:bg-primary/90 transition-colors flex items-center justify-center gap-2 group"
                             >
-                                <span>Nachricht senden via Mail</span>
+                                <span>Send Message via Email</span>
                                 <Send size={18} className="transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </button>
                         </form>

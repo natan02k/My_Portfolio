@@ -51,11 +51,11 @@ export const Navbar = () => {
 
     const navItems = [
         { name: "Home", href: "#home" },
-        { name: "Über mich", href: "#about" },
+        { name: "About", href: "#about" },
         { name: "Skills", href: "#skills" },
-        { name: "Projekte", href: "#projects" },
-        { name: "Erfahrung", href: "#experience" },
-        { name: "Kontakt", href: "#contact" },
+        { name: "Projects", href: "#projects" },
+        { name: "Experience", href: "#experience" },
+        { name: "Contact", href: "#contact" },
     ];
 
     return (
