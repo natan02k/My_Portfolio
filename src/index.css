@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+}
+
+:root {
+  --color-background: #0f172a;
+  --color-foreground: #f8fafc;
+  --color-primary: #38bdf8;
+  --color-secondary: #818cf8;
+  --color-accent: #c084fc;
+  color-scheme: dark;
+}
+
+:root.light {
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-primary: #0284c7;
+  --color-secondary: #4f46e5;
+  --color-accent: #9333ea;
+  color-scheme: light;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  background-color: var(--color-background);
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: #0f172a;
+}
+
+/* Base custom classes to replicate awwwards feel */
+.glass {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
