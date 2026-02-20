@@ -108,7 +108,7 @@ export const Hero = () => {
                                 variants={maskVariants}
                                 className="text-xl md:text-3xl lg:text-4xl font-light text-foreground/80 max-w-2xl font-serif italic"
                             >
-                                Frontend Developer & Designer
+                                Computer Science Student & Software Developer
                             </motion.h2>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ export const Hero = () => {
                         variants={itemVariants}
                         className="text-base md:text-lg text-foreground/60 max-w-xl mx-auto mt-4 font-medium"
                     >
-                        Spezialisiert auf interaktive Web-Erlebnisse, saubere Architektur und modernes Design.
+                        Von Full-Stack-Webanwendungen und Game Development über systemnahe C-Programmierung bis hin zu Data Science und Reinforcement Learning-Modellen.
                     </motion.p>
 
                     <motion.div
